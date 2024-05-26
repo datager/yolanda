@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
 
     socklen_t server_len = sizeof(server_addr);
 
-    struct sockaddr *reply_addr;
+    struct sockaddr *reply_addr; // 用于接收
     reply_addr = malloc(server_len);
 
     char send_line[MAXLINE], recv_line[MAXLINE + 1];
